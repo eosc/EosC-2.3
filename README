@@ -1,0 +1,238 @@
+$Id: README,v 1.6 2006/08/09 02:00 hpdl Exp $
+
+This is the Evolve Networks Edition 2.2_2 of osCommerce.
+
+Installation is the same as the stock osCommerce distrubution.
+
+The default admin password is presented to you on a successful install
+
+All installed contributions are included in this archive.
+
+Thanks and have fun!
+Evolve Networks
+http://e.volve.net
+
+Following is the original osCommerce README
+
+$Id: README,v 1.3 2003/07/12 09:38:07 hpdl Exp $
+
+osCommerce 2.2 Milestone 2 Release Notes
+Copyright (c) osCommerce 2003
+
+Saturday 12th July, 2003
+
+1. Introduction To osCommerce
+2. History Of osCommerce
+3. osCommerce Project Developers
+4. History Of Releases
+5. About osCommerce Milestone Releases
+6. About Future osCommerce Releases
+7. A Notice To Our Community
+
+------------------------------------------------------------------------------
+1. Introduction To osCommerce
+------------------------------------------------------------------------------
+
+osCommerce is an online shop e-commerce solution under on going development by
+the open source community. Its feature packed out-of-the-box installation
+allows store owners to setup, run, and maintain their online stores with
+minimum effort and with absolutely no costs or license fees involved.
+
+osCommerce combines open source solutions to provide a free and open
+e-commerce platform, which includes the powerful PHP web scripting language,
+the stable Apache web server, and the fast MySQL database server.
+
+With no restrictions or special requirements, osCommerce is able to run on any
+PHP3 or PHP4 enabled web server, on any environment that PHP and MySQL
+supports, which includes Linux, Solaris, BSD, and Microsoft Windows
+environments.
+
+The success of osCommerce not only comes from the development of a rock-solid
+framework to base e-commerce solutions on, but also from the community which
+the project has attracted.
+
+Through the community osCommerce has been able to grow in many directions
+leaving the project developers to focus on the core issues of operating an
+online business.
+
+## More information can be found on the osCommerce support site at:
+##
+## http://www.oscommerce.com
+##
+## The osCommerce Community section can be found at:
+##
+## http://www.oscommerce.com/community
+
+------------------------------------------------------------------------------
+2. History Of osCommerce
+------------------------------------------------------------------------------
+
+osCommerce was first released in March 2000, then called The Exchange Project,
+as an example resource study case of how an online shop worked behind the
+scenes, while at the same time being a rich example of PHP logic useful to
+those who were starting out in, or who were already developing in, PHP.
+
+The project has long matured since then and is now referenced as an open
+source based e-commerce solution.
+
+The project name change in December 2001, to osCommerce, was performed to show
+this maturity to the public.
+
+## The news archive of osCommerce can be found at:
+##
+## http://www.oscommerce.com/about/news
+
+------------------------------------------------------------------------------
+3. osCommerce Project Developers
+------------------------------------------------------------------------------
+
+Harald Ponce de Leon
+Project Leader
+Germany
+
+David Garcia Watkins
+Core Developer
+Spain
+
+Jan Wildeboer
+Core Developer
+Germany
+
+Thomas A. Moulton
+Core Developer
+America
+
+Christian Lescuyer
+Support
+France
+
+Mark Keith Evans
+Support
+England
+
+Ian C. Wilson
+Support
+England
+
+Linda McGrath
+Support
+America
+
+Matthijs vd Vegte
+Support
+Netherlands
+
+## An up-to-date osCommerce team list can be found at:
+##
+## http://www.oscommerce.com/about/team
+
+------------------------------------------------------------------------------
+4. History Of Releases
+------------------------------------------------------------------------------
+
+6th March, 2001: The Exchange Project Preview Release 2.1
+
+13th December, 2000: The Exchange Project Preview Release 2.0a
+
+2nd December, 2000: The Exchange Project Preview Release 2.0
+
+12th June, 2000: The Exchange Project Preview Release 1.1 Administration Tool
+
+17th May, 2000: The Exchange Project Preview Release 1.1 Catalog
+
+20th March, 2000: The Exchange Project Preview Release 1.0 Administration Tool
+
+12th March, 2000: The Exchange Project Preview Release 1.0 Catalog
+
+## osCommerce project releases can be downloaded at:
+##
+## http://www.oscommerce.com/downloads
+
+------------------------------------------------------------------------------
+5. About osCommerce Milestone Releases
+------------------------------------------------------------------------------
+
+The current development version, osCommerce 2.2-CVS, has been in development
+for nearly 2 years. During this time, two events occured which has led to the
+delay of finalizing a release for the public.
+
+The first event occured in December 2001 with the project name change from The
+Exchange Project to osCommerce.
+
+The second event occured shortly afterwards of the project name change with
+the shift of focus on no longer making the pending 2.2 release a Preview
+Release release, but a normal standard release making it the first of the kind
+for the project.
+
+The focus of both events increased the quality of work put towards the
+solution to ensure it works as a whole as advertised. This was strongly
+undertaken on the second event with the focus change of "working for new
+features" to "working to make sure the current feature set works as
+expected".
+
+Both events were a success in securing the main internal logic of the
+solution, as during this time many store owners have moved from baseing their
+stores on the Preview Release 2.1 release to a daily snapshot of the
+developing 2.2 version.
+
+Now that we are near to finalizing the developing 2.2 version, a workboard has
+been made available which shows what work is currently pending and what
+milestone release it will appear in.
+
+Having milestone releases publicly available at the end of a long development
+phase will help the quality of the finalized 2.2 version by providing the
+opportunity to report bugs on a fixed release rather than having to report
+bugs on a specified date of a daily snapshot which could sometimes not be
+known by the reporter.
+
+Bugs will be fixed in the CVS development repository which dailysnaps are
+based on and will appear in the next snapshot on the following day, and all
+leading milestone and stable releases made available.
+
+## The osCommerce workboard can be found at:
+##
+## http://www.oscommerce.com/community/workboard
+##
+## The osCommerce bug reporter can be found at:
+##
+## http://www.oscommerce.com/community/bugs
+
+------------------------------------------------------------------------------
+6. About Future osCommerce Releases
+------------------------------------------------------------------------------
+
+Due to the current development version of 2.2-CVS being in development for
+such a long time, contributions have been made based on daily snapshots which
+fragmented support and availability of contributions when logic changed in
+leading daily snapshots.
+
+As osCommerce 2.2 will be the first non-Preview Release of the project, and
+is being developed with high coding standards, daily snapshots post 2.2 will
+become unsupported and be used only for those interested in trying out new
+features and bug hunting.
+
+Any serious bugs fixed during the development phase of 2.3 will lead to point
+releases becoming available, such as 2.2.1, 2.2.2, etc.
+
+osCommerce 2.3 will be an optimized version of 2.2 which will have PHP 3
+compatibility dropped. This change of focus is no longer to keep compatible
+with PHP 3, but to keep compatible with PHP 4 when features of the newer PHP
+versions are being taken advantage of.
+
+After osCommerce 2.3 is released, development will start on the 3.x series
+which will introduce new sexy features such as database independency and
+possibly a template engine to contemplate the template structure introduced in
+the 2.2 version to ease migrations between project versions
+
+------------------------------------------------------------------------------
+7. A Notice To Our Community
+------------------------------------------------------------------------------
+
+We would like to thank the community for supporting us during the long
+development phase of 2.2, and for understanding what 2.2 means to us and what
+it will eventually mean to those using it.
+
+Special thanks go those that keep the community forums alive, and to those
+that have shown their appreciation to project developers by way of donations
+or items purchased on the wishlists.
+
