@@ -1,0 +1,29 @@
+      <tr>
+      
+<script type="text/javascript" src="tabs/tabpane.js"></script>
+<link type="text/css" rel="StyleSheet" href="tabs/tab.css" />  
+      <td>
+<div class="tab-pane" id="tab-pane-1">
+
+<div class="tab-page">
+<h2 class="tab">Description</h2>
+This is the first
+</div>
+
+<div class="tab-page">
+<h2 class="tab">Specs</h2> 
+This is the second
+</div>
+
+<div class="tab-page">
+<h2 class="tab">Extra Images</h2> 
+This is the third
+</div>
+
+<div class="tab-page">
+<h2 class="tab">Reviews</h2> 
+This is the fourth
+</div>
+</div>
+
+      </td></tr><tr>

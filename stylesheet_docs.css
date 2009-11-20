@@ -1,0 +1,537 @@
+/*
+  $Id: stylesheet.css,v 1.56 2003/06/30 20:04:02 hpdl Exp $
+
+  osCommerce, Open Source E-Commerce Solutions
+  http://www.oscommerce.com
+
+  Copyright (c) 2003 osCommerce
+
+  Released under the GNU General Public License
+  Descriptions added by bill110
+*/
+
+/*.boxText
+Changes the font size of the text in all the boxes.
+
+Set the padding in the stylesheet to have space on the left and right ... 
+if you set padding on the top and bottom it will leave that much space between 
+the text lines in certain boxes and is not recommended for the top and bottom padding.*/
+.boxText { 
+  font-family: Verdana, Arial, sans-serif; 
+  font-size: 10px; 
+}
+
+/*.errorBox
+Color and text size of error boxes with the red triangle ... ex: admin/backup.php where 
+it will say backup directory does not exist, warning...I can write to your configuration files, etc.*/
+.errorBox { 
+  font-family : Verdana, Arial, sans-serif; 
+  font-size : 10px; background: #ffb3b5; 
+  font-weight: bold; 
+}
+
+/*.stockWarning
+The style used for the stock level warning text shown on the shopping cart page when purchasing items.*/
+.stockWarning { 
+  font-family : Verdana, Arial, sans-serif; 
+  font-size : 10px; color: #cc0033;
+}
+
+/*.productsNotifications
+The style used for the product notifications checkbox bar on the checkout success page.
+You can also put a color in the text box and it will make the text change on just that bar.*/
+.productsNotifications { 
+  background: #f2fff7; 
+}
+
+/*.orderEdit
+The color style of the "edit" links shown on the checkout confirmation page.*/
+.orderEdit { 
+  font-family : Verdana, Arial, sans-serif; 
+  font-size : 10px; color: #70d250; 
+  text-decoration: underline;
+}
+
+/*BODY
+Type color is text color in the left & right column boxes and the "text body" that is NOT linked.
+
+Background color is the page background color ... this acts as a base whereupon the header
+ and columns are built.
+
+Set the border color which sets the color around the inside browser window including the scrollbar.
+
+Set the top border to 10 with the same color and it will drop down the table and the scrollbars of 
+the browser.*/
+BODY {
+  background: #ffffff;
+  color: #000000;
+  margin: 0px;
+}
+
+/*A
+The color style for ALL link colors throughout the entire store.*/
+A {
+  color: #000000;
+  text-decoration: none;
+}
+
+/*A:hover
+The color style used for mouse over links throughout the entire store.*/
+A:hover {
+  color: #AABBDD;
+  text-decoration: underline;
+}
+
+/*FORM
+The style used for forms. Changes the color of this text, "Use keywords to find the product 
+you are looking for" in the "Quick Find" box on the left.*/
+FORM {
+  display: inline;
+}
+
+/*TR.header (means table row.header and is a general setting for the whole table)
+The style used for the background color of the header.*/
+TR.header {
+  background: #ffffff;
+}
+
+/*TR.headerNavigation
+The styles used for the breadcrumb navigation path (background color only of the top 
+navigation as "Top >> Catalog >> etc)*/
+TR.headerNavigation {
+  background: #bbc3d3;
+}
+
+/*
+TD.headerNavigation
+Arrow colors that point forward and the vertical link separators | in the breadcrumb navigation path.
+
+If you set a background color here it will override the TR.headerNavigation color set.
+
+A colored border on the bottom can be set for a separation between the header and the categories.
+
+A padding value can be set which will only pad the Navigation Bar. 
+
+A background image for the navigation table can be set also.*/
+TD.headerNavigation {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+  background: #bbc3d3;
+  color: #ffffff;
+  font-weight : bold;
+}
+
+/*A.headerNavigation
+Sets the text link colors for the breadcrumb navigation path links (Top Catalog etc.)*/
+A.headerNavigation { 
+  color: #FFFFFF; 
+}
+
+/*A.headerNavigation:hover
+The mouse over effects of the breadcrumb navigation path links ( top, catalog, 
+my account, cart contents, etc.)*/
+A.headerNavigation:hover {
+  color: #ffffff;
+}
+
+/*TR.headerError 
+The styles used for the error messages shown in the header. 
+The default is a red background with white text.*/
+TR.headerError {
+  background: #ff0000;
+}
+
+/*TD.headerError
+The styles used for the error messages shown in the header. 
+The default is a red background with white text.*/
+TD.headerError {
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-size: 12px;
+  background: #ff0000;
+  color: #ffffff;
+  font-weight : bold;
+  text-align : center;
+}
+
+/*TR.headerInfo
+The styles used for the information messages shown in the header ... 
+changes the bg color of the top box that appears when a new password is sent ...
+ex: A New Password Has Been Sent To Your Email Address*/
+TR.headerInfo {
+  background: #00ff00;
+}
+
+/*TD.headerInfo
+The styles used for the information messages shown in the header ... 
+changes the bg color of the top box that appears when a new password is sent ...
+ex: A New Password Has Been Sent To Your Email Address*/
+TD.headerInfo {
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-size: 12px;
+  background: #00ff00;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*TR.footer
+This sets the color of the footer row where the date and counter are.*/
+TR.footer {
+  background: #bbc3d3;
+}
+
+/*TD.footer
+This is the size & color of the text in the footer row where the date and counter are. 
+If you set a background color on this TD.footer tag it will override the TR.footer tag.*/
+TD.footer {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+  background: #bbc3d3;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/*.infoBox
+Sets the background border color around all the boxes and not the box headings 
+except the "my account", "edit account", and "add a new address" boxes.*/
+.infoBox {
+  background: #666464;
+}
+
+/*.infoBoxContents
+Sets the color of ALL the inside of the boxes and puts a colored border around the comments boxes.
+Setting a text color here will color the numbers text in the boxes like the catalog listings and 
+the "Best Sellers" box numbers and the "My Account", "Edit Account", & "Add Address" headings.
+*/
+.infoBoxContents {
+  background: #f8f8f9;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+}
+
+/*.infoBoxNotice
+The style used for the outline of the box created at the top of the checkout_payment.php page 
+when a customer inputs the wrong credit card number or expiration date.*/
+.infoBoxNotice {
+  background: #FF8E90;
+}
+
+/*.infoBoxNoticeContents
+The style used for the body of the box created at the top of the checkout_payment.php page 
+when a customer inputs the wrong credit card number or expiration date.*/
+.infoBoxNoticeContents {
+  background: #FFE6E6;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+}
+
+/*TD.infoBoxHeading
+Sets the left and right column boxes and the new products box heading color and text color.
+
+The text size of the heading boxes can be changed ... anything above 10 you will need to 
+enlarge the box graphics also (images/infobox)
+
+Padding can be added to these heading boxes.
+
+TR.accountHistory-odd, TR.addressBook-odd, TR.alsoPurchased-odd, TR.payment-odd, 
+TR.productListing-odd, TR.productReviews-odd, TR.upcomingProducts-odd, TR.shippingOptions-odd
+TR.accountHistory-even, TR.addressBook-even, TR.alsoPurchased-even, TR.payment-even, 
+TR.productListing-even, TR.productReviews-even, TR.upcomingProducts-even, TR.shippingOptions-even
+Sets the odd and even row colors on all box listings.*/
+TD.infoBoxHeading {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  background: #ffffff;
+  color: #ffffff;
+}
+
+
+TD.infoBox, SPAN.infoBox {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+}
+
+TR.accountHistory-odd, TR.addressBook-odd, TR.alsoPurchased-odd, TR.payment-odd, TR.productListing-odd, TR.productReviews-odd, TR.upcomingProducts-odd, TR.shippingOptions-odd {
+  background: #f8f8f9;
+}
+
+TR.accountHistory-even, TR.addressBook-even, TR.alsoPurchased-even, TR.payment-even, TR.productListing-even, TR.productReviews-even, TR.upcomingProducts-even, TR.shippingOptions-even {
+  background: #f8f8f9;
+}
+
+/*TABLE.productListing
+Sets a border around the products listing table that shows the listing of the products.*/
+TABLE.productListing {
+  border: 1px;
+  border-style: solid;
+  border-color: #b6b7cb;
+  border-spacing: 1px;
+}
+
+/*.productListing-heading
+The color of the background of the product listing heading that has "product name", "price", etc. 
+The text style and color can also be set.*/
+.productListing-heading {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+  background: #b6b7cb;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+/*TD.productListing-data
+Set a different background color for the product listing table and 
+also set box padding, size, borders ... experiment!*/
+TD.productListing-data {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+}
+
+/*A.pageResults
+Sets the link on catalog/includes/split_page_results.php and page results 
+numbered link colors at the bottom of the product pages.*/
+A.pageResults {
+  color: #0000FF;
+}
+
+/*A.pageResults:hover
+Mouse over link colors on catalog/includes/split_page_results.php and page results 
+numbered links mouse over color at the bottom of the product pages.*/
+A.pageResults:hover {
+  color: #0000FF;
+  background: #FFFF33;
+}
+
+/*TD.pageHeading, DIV.pageHeading
+The style used for page headings. 
+Color on the checkout_success.php page that says "Your Order Has Been Processed!" and also 
+on all the product heading pages as What's New Here? Enjoy Your Shopping! Text on all the product pages.
+
+Change the size of the text here.*/
+TD.pageHeading, DIV.pageHeading {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #9a9a9a;
+}
+
+/*TR.subBar
+The style used for the sub navigation bar.*/
+TR.subBar {
+  background: #f4f7fd;
+}
+
+/*TD.subBar
+The style used for the sub navigation bar.*/
+TD.subBar {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+  color: #000000;
+}
+
+/*TD.main, P.main
+The size of the text can be set for all the main text area, the "My Account Info", 
+"Edit Account", "Add Address", "Order History", & "Notifications" page boxes. 
+If you set the text color it is the text color on all these ... not the column boxes.
+
+A padding can be also be set for all the body text in the store.*/
+TD.main, P.main {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/*TD.smallText, SPAN.smallText, P.smallText
+Copyright text color & size at the bottom of the page.
+
+"Include Subcategories" Text on the advanced_search.php page
+
+Page results text at the bottom of the product pages such as "Displaying 11 to 20 (of 32 products) 
+Result Pages:"*/
+TD.smallText, SPAN.smallText, P.smallText {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+}
+
+/*TD.accountCategory
+The style used for the account categories.*/
+TD.accountCategory {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 13px;
+  color: #aabbdd;
+}
+
+/*TD.fieldKey
+Text Sizes for the account parameter keys on the advanced_search.php page 
+such as "Categories: Manufacturers: Price From: Price To: 
+Date From: Date To:*/
+TD.fieldKey {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/*TD.fieldValue
+Text Sizes for the account parameter values on the advanced_search.php page 
+such as "Categories: Manufacturers: Price From: Price To: 
+Date From: Date To:*/
+TD.fieldValue {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+}
+
+/*TD.tableHeading
+Text styles/sizes on the table headings of address_book.php 
+and product_reviews.php page such as "No. Name Location"*/
+TD.tableHeading {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/*SPAN.newItemInCart
+The style used for marking new products added to the shopping cart so 
+these products show what's in the shopping cart.*/
+SPAN.newItemInCart {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+  color: #ff0000;
+}
+
+/*CHECKBOX, INPUT, RADIO, SELECT
+The style used for certain HTML form elements like the size of the text 
+inside the drop down boxes like manufacturers.*/
+CHECKBOX, INPUT, RADIO, SELECT {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+}
+
+
+TEXTAREA {
+  width: 100%;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+}
+
+/*SPAN.greetUser
+The style used for the user greeting "Welcome Guest!" on the first page.*/
+SPAN.greetUser {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  color: #f0a480;
+  font-weight: bold;
+}
+
+/*TABLE.formArea
+In "My Account Information", "Edit Account", and "Add Address" this is the inside box color.
+Set the border around the boxes in the border section.*/
+TABLE.formArea {
+  background: #f1f9fe;
+  border-color: #7b9ebd;
+  border-style: solid;
+  border-width: 1px;
+}
+
+/*
+TD.formAreaTitle
+In "My Account Information", "Edit Account", and "Add Address" this is the size of the text headings.
+
+Changes the text color on top of the boxes on the "My Account Info" page.
+
+Leave the text color box blank and the color is black.
+
+A padding can also be set for space on the right and left sides.*/
+TD.formAreaTitle {
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/*SPAN.markProductOutOfStock
+The text color used for marking products out of stock.*/
+SPAN.markProductOutOfStock {
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-size: 12px;
+  color: #c76170;
+  font-weight: bold;
+}
+
+/*SPAN.productSpecialPrice
+The style used on special product prices.*/
+SPAN.productSpecialPrice {
+  font-family: Verdana, Arial, sans-serif;
+  color: #ff0000;
+}
+
+/*SPAN.errorText
+The style used for error text messages.*/
+SPAN.errorText {
+  font-family: Verdana, Arial, sans-serif;
+  color: #ff0000;
+}
+
+/*
+.moduleRow
+The style used for the shipping and payment modules.*/
+.moduleRow { }
+
+/*.moduleRowOver
+The color of the bar on the checkout_payment.php page on a mouse over 
+when you choose your payment method.*/
+.moduleRowOver { 
+  background-color: #D7E9F7; 
+  cursor: pointer; cursor: hand; 
+}
+
+/*.moduleRowSelected
+The color of the bar on the checkout_shipping.php showing the shipping charge & the selected 
+payment method on th checkout_payment.php page.*/
+.moduleRowSelected { 
+  background-color: #E9F4FC; 
+  }
+
+/*.checkoutBarFrom, .checkoutBarTo
+The color & size of the text at the bottom of the checkout pages that shows what page you are NOT on 
+such as "Delivery Information Payment Information Confirmation Finished!"*/
+.checkoutBarFrom, .checkoutBarTo { 
+  font-family: Verdana, Arial, sans-serif; 
+  font-size: 10px; color: #8c8c8c; 
+  }
+ 
+ /*.checkoutBarCurrent
+The color & size of the text at the bottom of the checkout pages that shows what page you are on 
+such as "Delivery Information Payment Information Confirmation Finished!"*/ 
+.checkoutBarCurrent { 
+font-family: Verdana, Arial, sans-serif; 
+font-size: 10px; color: #000000; 
+}
+
+/* .messageBox
+.messageStackError, .messageStackWarning
+.messageStackSuccess
+The style used for message boxes. 
+The error background colors like trying to delete an address that is your primary address in the 
+account section. */
+.messageBox { font-family: Verdana, Arial, sans-serif; 
+  font-size: 10px; 
+}
+
+.messageStackError, .messageStackWarning { 
+  font-family: Verdana, Arial, sans-serif; 
+  font-size: 10px; 
+  background-color: #ffb3b5; 
+}
+
+.messageStackSuccess { 
+  font-family: Verdana, Arial, sans-serif; 
+  font-size: 10px; background-color: #99ff00; 
+}
+
+/* .inputRequirement
+The style used for form input requirement fields. 
+The color of the asterisk * and the words "Required Information" on the account.php pages. */
+.inputRequirement { 
+  font-family: Verdana, Arial, sans-serif; 
+  font-size: 10px; color: #ff0000; 
+}

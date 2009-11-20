@@ -1,0 +1,105 @@
+/* Designed for use with the Access with Level Account (v. 2.2) for the Admin Area of osCommerce (MS2) 	*/
+/* Stylesheet coding by Cindy Harlow aka Chinchilla2 on the osC Support Forum							*/
+/* Copyright 2006 - Released under the GNU General Public License										*/
+/* Pages effected by this stylesheet... login.php, logoff.php, index.php, password_forgotten.php		*/ 
+
+a { color:#000000; text-decoration:none; }
+a:hover { color:#000000; text-decoration:underline; }
+.sub { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; line-height: 1; color: #dddddd; }
+.text { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; line-height: 1; color: #000000; }
+.menuBoxHeading { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #ffffff; font-weight: bold; background-color: #7187bb; border-color: #7187bb; border-style: solid; border-width: 1px; }
+.infoBox { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #080381; background-color: #f2f4ff; border-color: #7187bb; border-style: solid; border-width: 1px; }
+.smallText { font-family: Verdana, Arial, sans-serif; font-size: 10px; }
+
+body { font-family:Verdana, Arial, Helvetica, sans-serif;
+	margin: 0px;
+	background-color: #FFFFFF;
+	}
+
+TR.mainback {background-color: #000000;}
+
+TR.logo-head {background-color: #FFFFFF;}
+
+TD.nav-head {color: #080381;
+	text-decoration: none;
+	font-size: 10px;
+	font-weight: bold;
+	}
+
+TR.main {background-color: #080381}
+
+TD.login_heading { font-size: 12px;
+	font-weight: bold;
+	color: #ffffff;
+	}
+
+TD.logoff_heading { font-size: 14px;
+	font-weight: bold;
+	color: #ffffff;
+	}
+
+TABLE.login_form_bg { background-color: #666666;}
+
+TABLE.login_form {background-color: #F0F0FF;
+	border: 2px solid #7187bb;}
+
+TD.smallText { font-size: 10px; }
+
+TD.login { font-size: 12px;
+	color: #000000;
+	}
+
+a.sub:link, a.sub:visited { color: #000000;
+	text-decoration: none;
+	font-size: 11px;
+	line-height: 1.5;
+	}
+
+a.sub:hover { color: #000000;
+	text-decoration: underline;
+	font-size: 11px;
+	line-height: 1.5;
+	}
+
+.menuBoxHeading {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	font-weight: bold;
+	background-color: #FFFFFF;
+	border: 1px solid #999999;
+	}
+
+.infoBox { 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	background-color: #FFFFFF;
+	border: 1px solid #999999;
+	}
+
+.infoBoxIndex { 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	background-color: #FFFFFF;
+	}
+
+.heading { font-size: 14px;
+	font-weight: bold;
+	line-height: 1.5;
+	color: #000000;
+	}
+
+.indexmain { font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	}
+
+a.indexmain:link, a.indexmain:visited { color: #000000;
+	text-decoration: none;
+	}
+
+a.indexmain:hover { color: #000000;
+	text-decoration: underline;
+	}
+

@@ -1,0 +1,30 @@
+<?php define ('STS_END_CHAR', '}'); ?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html $htmlparams}>
+<head>
+<!--$headcontent-->
+<style type="text/css">
+body {
+	font-family: Verdana, Arial, sans-serif; font-size: 10px;
+}
+</style>
+<script language="javascript"><!--
+  var i=0;
+function resize() {
+  if (navigator.appName == 'Netscape') i=40;
+  if (document.images[0]) window.resizeTo(document.images[0].width +60, document.images[0].height+120-i);
+  self.focus();
+}
+//--></script>
+</head>
+<body onLoad="resize();">
+<table border="0" align="center" cellpadding="5">
+  <tr>
+    <td align="center">
+    $productname}<br>
+	$popupimage}
+	</td>
+  </tr>
+</table>
+</body>
+</html>

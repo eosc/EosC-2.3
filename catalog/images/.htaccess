@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule \.(html|htm|php|cgi|pl)$ /images/pixel_trans.gif [R,L]

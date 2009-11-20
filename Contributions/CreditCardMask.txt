@@ -1,0 +1,61 @@
+
+This Contrib only requires the modification of two files. It places a check box under the credit card information
+of an order. Once checked and updated, it will over write the credit card number in the database with a masked
+number as shown below.
+
+Example: "Credit Card Number: XXXXXXXXXXXX1234"
+
+
+
+In catalog/admin/orders.php
+
+Right After:
+
+        $check_status_query = tep_db_query("select customers_name, customers_email_address, orders_status, date_purchased from " . TABLE_ORDERS . " where orders_id = '" . (int)$oID . "'");
+        $check_status = tep_db_fetch_array($check_status_query);
+
+Add:
+
+        $cc_num_query = tep_db_query("select cc_number from " . TABLE_ORDERS . " where orders_id = '" . (int)$oID . "'");
+        $cc_num = tep_db_fetch_array($cc_num_query);
+
+        $len = (strlen($cc_num['cc_number']) - 4);
+        $masked_cc_num = '';
+          for($i = 0 ; $i < $len ; $i++)
+           {
+            $masked_cc_num .= 'X';
+           }
+        $masked_cc_num .= substr($cc_num['cc_number'], $len, 4);
+
+        if (isset($HTTP_POST_VARS['mask_cc']) && ($HTTP_POST_VARS['mask_cc'] == 'on')) {
+          tep_db_query("update " . TABLE_ORDERS . " set cc_number = '" . $masked_cc_num . "' where orders_id = '" . (int)$oID . "'");
+
+          $order_updated = true;
+        }
+        
+Right After:
+
+            <td class="main"><?php echo $order->info['cc_expires']; ?></td>
+          </tr>
+
+Add:
+
+          <tr>
+            <td colspan="2"><?php echo tep_draw_separator('pixel_trans.gif', '1', '10'); ?></td>
+          </tr>
+            <td colspan="2"><table border="0" cellspacing="0" cellpadding="2">
+             <tr><?php echo tep_draw_form('status', FILENAME_ORDERS, tep_get_all_get_params(array('action')) . 'action=update_order'); ?>
+               <td class="main"><b><?php echo ENTRY_NOTIFY_MASK_CC; ?></b></td>
+               <td class="main"><?php echo tep_draw_checkbox_field('mask_cc', '', false); ?></td>
+             </tr>
+            </table></td>
+
+
+
+
+
+In catalog/admin/includes/languages/english/orders.php
+
+Add Before ?>:
+
+define('ENTRY_NOTIFY_MASK_CC', 'Mask Credit Card Number:');           

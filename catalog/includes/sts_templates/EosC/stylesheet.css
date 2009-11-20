@@ -1,0 +1,513 @@
+/*
+  $Id: stylesheet.css,v 1.56 2003/06/30 20:04:02 hpdl Exp $
+
+  osCommerce, Open Source E-Commerce Solutions
+  http://www.oscommerce.com
+
+  Copyright (c) 2003 osCommerce
+
+  Released under the GNU General Public License
+*/
+
+.boxText { font-family: Verdana, Arial, sans-serif; font-size: 10px; }
+.boxBorder { font-family: Verdana, Arial, sans-serif; font-size: 10px; border: 1px solid #999999; }
+.trailText { font-family: Verdana, Arial, sans-serif; font-size: 10px; }
+.errorBox { font-family : Verdana, Arial, sans-serif; font-size : 10px; background: #ffb3b5; font-weight: bold; }
+.stockWarning { font-family : Verdana, Arial, sans-serif; font-size : 10px; color: #cc0033; }
+.productsNotifications { background: #f2fff7; }
+.orderEdit { font-family : Verdana, Arial, sans-serif; font-size : 10px; color: #70d250; text-decoration: underline; }
+
+BODY {
+  background: #FFFFFF;
+  color: #000000;
+  margin: 10px;
+}
+
+A {
+  color: #000000;
+  text-decoration: none;
+}
+
+A:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+A.articlelink{
+   color:#0000FF;
+  text-decoration: none;
+}
+
+FORM {
+	display: inline;
+}
+
+TR.header {
+  background: #ffffff;
+}
+
+TR.headerNavigation {
+  background: #bbc3d3;
+}
+
+TD.headerNavigation {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+  background: #bbc3d3;
+  color: #ffffff;
+  font-weight : bold;
+}
+
+A.headerNavigation { 
+  color: #000000;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+}
+
+A.headerNavigation:hover {
+  color: #000000;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+}
+
+TR.headerError {
+  background: #ff0000;
+}
+
+TD.headerError {
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-size: 12px;
+  background: #ff0000;
+  color: #ffffff;
+  font-weight : bold;
+  text-align : center;
+}
+
+TR.headerInfo {
+  background: #00ff00;
+}
+
+TD.headerInfo {
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-size: 12px;
+  background: #00ff00;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+
+TR.footer {
+  background: #bbc3d3;
+}
+
+TD.footer {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+  background: #bbc3d3;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.infoBox {
+  background: #999999;
+}
+
+.infoBoxContents {
+  background: #FFFFFF;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+}
+
+A.boxtext { 
+  color: #FFFFFF; 
+}
+
+A.boxtext:hover {
+  color: #ffffff;
+}
+
+td.navigation {
+  font-family: Verdana, Arial, sans-serif; 
+  font-size: 10px;
+  color: #000000;
+}
+
+td.greytable {
+	border: 1px solid #999999;
+}
+
+.navigation {
+  font-family: Verdana, Arial, sans-serif; 
+  font-size: 10px;
+  color: #000000;
+}
+
+A.navigation { 
+  color: #000000; 
+}
+
+A.navigation:hover {
+  color: #000000;
+}
+
+.infoBoxNotice {
+  background: #FF8E90;
+}
+
+.infoBoxNoticeContents {
+  background: #FFE6E6;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+}
+
+TD.infoBoxHeading {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+  background: #999999;
+  color: #ffffff;
+  padding-left: 2px;
+}
+
+A.infoBoxHeading { 
+  color: #FFFFFF; 
+}
+
+A.infoBoxHeading:hover {
+  color: #FFFFFF;
+}
+
+TD.infoBox, SPAN.infoBox {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+}
+
+TR.accountHistory-odd, TR.addressBook-odd, TR.alsoPurchased-odd, TR.payment-odd, TR.productListing-odd, TR.productReviews-odd, TR.upcomingProducts-odd, TR.shippingOptions-odd {
+  background: #FFFFFF;
+}
+
+TR.accountHistory-even, TR.addressBook-even, TR.alsoPurchased-even, TR.payment-even, TR.productListing-even, TR.productReviews-even, TR.upcomingProducts-even, TR.shippingOptions-even {
+  background: #E9E9E9;
+}
+
+TABLE.productListing {
+  border: 1px;
+  border-style: solid;
+  border-color: #999999;
+  border-spacing: 1px;
+}
+
+.productListing-heading {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+  background: #999999;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+TD.productListing-data {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+}
+
+A.pageResults {
+  color: #0000FF;
+}
+
+A.pageResults:hover {
+  color: #0000FF;
+  background: #FFFF33;
+}
+
+TD.pageHeading, DIV.pageHeading {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #9a9a9a;
+}
+
+TR.subBar {
+  background: #f4f7fd;
+}
+
+TD.subBar {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+  color: #000000;
+}
+
+TD.main, P.main {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+TD.smallText, SPAN.smallText, P.smallText {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+  color: #000000;
+}
+
+TD.reviewText, SPAN.reviewText, P.reviewText {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+  color: #006699;
+}
+
+TD.accountCategory {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 13px;
+  color: #aabbdd;
+}
+
+TD.fieldKey {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+TD.fieldValue {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+}
+
+TD.tableHeading {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+TD.category_desc {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+TD.productDesc {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+  color: #808080;
+  padding: 1px 7px 1px 7px;
+}
+
+TD.productheadDesc {
+ font-family: Verdana, Arial, sans-serif;
+ font-size: 10px;
+ font-weight: normal;
+ color: #000000;
+ padding: 4px 0px 0px 10px;
+}
+
+TD.cat_head {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+TD.cat_desc {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+}
+.pageReviewHeading {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+SPAN.newItemInCart {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+  color: #ff0000;
+}
+
+SPAN.removeProduct {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 9px;
+  color: #3366FF;
+  font-weight: normal;
+}
+
+INPUT.quantitybox {
+  border: 1px;
+  border-style: solid;
+  border-color: #000000;
+    font-size: 12px;
+  width: 20px;
+  height: 22px;
+  border-spacing: 0px;
+  background: #F8f8f9;
+}
+
+CHECKBOX, INPUT, RADIO, SELECT {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+}
+
+TEXTAREA {
+  width: 100%;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+}
+
+SPAN.greetUser {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  color: #f0a480;
+  font-weight: bold;
+}
+
+TABLE.formArea {
+  background: #999999;
+  border-color: #999999;
+  border-style: solid;
+  border-width: 1px;
+}
+
+TD.formAreaTitle {
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+SPAN.markProductOutOfStock {
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-size: 12px;
+  color: #c76170;
+  font-weight: bold;
+}
+
+SPAN.productSpecialPrice {
+  font-family: Verdana, Arial, sans-serif;
+  color: #ff0000;
+}
+
+SPAN.errorText {
+  font-family: Verdana, Arial, sans-serif;
+  color: #ff0000;
+}
+
+.moduleRow { }
+.moduleRowOver { background-color: #D7E9F7; cursor: pointer; cursor: hand; }
+.moduleRowSelected { background-color: #E9F4FC; }
+
+.checkoutBarFrom, .checkoutBarTo { font-family: Verdana, Arial, sans-serif; font-size: 10px; color: #8c8c8c; }
+.checkoutBarCurrent { font-family: Verdana, Arial, sans-serif; font-size: 10px; color: #000000; }
+
+/* message box */
+
+.messageBox { font-family: Verdana, Arial, sans-serif; font-size: 10px; }
+.messageStackError, .messageStackWarning { font-family: Verdana, Arial, sans-serif; font-size: 10px; background-color: #ffb3b5; }
+.messageStackSuccess { font-family: Verdana, Arial, sans-serif; font-size: 10px; background-color: #99ff00; }
+
+/* input requirement */
+
+.inputRequirement { font-family: Verdana, Arial, sans-serif; font-size: 10px; color: #ff0000; }
+
+/* XC Menu Styles */
+
+#catxcdiv ul {
+	list-style: none;
+	margin: 0;
+	padding: 0 0 0 1.5em;
+}
+
+/* menu item spacing */
+#catxcdiv li{ margin-bottom: .2em; }
+
+/*padding between submenu items*/
+#catxc ul li { padding: 0 0 .2em 0; }
+
+/*xc menu item*/
+#catxcdiv li.xc { list-style: none; }
+
+/*submenu*/
+#catxcdiv li.xc ul { margin: .3em 0 0 -.8em; }
+
+/* +/- control */
+div.xcx, div.xcc {
+	position: relative;
+	display: inline;
+}
+li.xc>div.xcx, li.xc>div.xcc {
+	position: static;
+	margin-left: -1.5em;
+	float: left;
+	width: 1.5em;
+}
+div.xcx a, div.xcc a {
+	position: absolute;
+	left: -2em;
+}
+div.xcx>a, div.xcc>a {
+	position: static;
+}
+div.xcx a:link, div.xcx a:visited,
+div.xcc a:link, div.xcc a:visited {
+	text-decoration: none;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 90%;
+}
+
+/* UL Style Menu */
+	#nav, #nav ul { /* all lists */
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		float : left;
+		width : 11em;
+	}
+	
+	#nav li { /* all list items */
+		position : relative;
+		float : left;
+		line-height : 1.25em;
+		margin-bottom : -1px;
+		width: 11em;
+		background-color : white;		
+	}
+	
+	#nav li ul { /* second-level lists */
+		position : absolute;
+		left: -999em;
+		margin-left : 11.05em;
+		margin-top : -1.35em;
+	}
+	
+	#nav li ul ul { /* third-and-above-level lists */
+		left: -999em;
+	}
+	
+	#nav li a {
+		width: 11em;
+		w\idth : 10em;
+		display : block;
+		color : black;
+		font-weight : bold;
+		text-decoration : none;
+		border : 1px solid black;
+		padding : 0 0.5em;
+	}
+	
+	#nav li a:hover {
+		color : white;
+		background-color : black;
+	}
+	
+	#nav li:hover ul ul, #nav li:hover ul ul ul, #nav li.sfhover ul ul, #nav li.sfhover ul ul ul {
+		left: -999em;
+	}
+	
+	#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul, #nav li li li.sfhover ul { /* lists nested under hovered list items */
+		left: auto;
+	}
+
+	
+/* Menu items with subcategories */	
+#nav a.daddy {
+	background: url(images/arrow_green.gif) center right no-repeat;
+}
+
+/* Selected items with subcategories */	
+#nav li.selected {
+    background-color: #FFCC00;
+}

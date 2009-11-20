@@ -1,0 +1,204 @@
+Changelog:
+
+5.22.07 Bumped EosC version to 2.2_3
+
+5.22.07 Gussied up the email invoice template
+
+5.22.07 Updated address_book_process.php, checkout_payment_address.php, checkout_shipping_address.php to auto-update state/province via Stevel's country-state-selector
+
+5.22.07 Updated TinyMCE to 2.1.1.1 - changed admin/includes/header.php to  include("./includes/javascript/tiny.inc"); - Place your Tiny definitions here
+
+5.21.07 Added USPS Methods to replace stock USPS shipping module
+
+5.20.07 Updated STS to 4.5.2
+
+5.20.07 Moved Country above State in create_account since it auto updates the choices
+
+5.20.07 Added World Zones to fix a problem with non US state/province entry
+
+3.17.07 Bumped version to 2.2_2
+
+3.17.07 Updated create_account.php with Stevel's country-state-selector - US by default, change value in /includes/languages/english.php to your country for new default
+
+3.17.07 Applied voucher tax fix from CCGV (trad) 1.2 - Thanks to Ally (Chooch) for pointing it out
+
+3.17.07 Fixed a problem with Xsell when used with open_basedir - 
+	<?php echo ((is_file(DIR_WS_CATALOG_IMAGES . '/'.$products['products_image'])) ?  tep_image(DIR_WS_CATALOG_IMAGES . '/'.$products['products_image'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) : '<br>No Image<br>');?>
+	changed to
+	<?php echo ((DIR_WS_CATALOG_IMAGES . '/'.$products['products_image']) ?  tep_image(DIR_WS_CATALOG_IMAGES . '/'.$products['products_image'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) : '<br>No Image<br>');?>
+
+3.17.07 Added German language pack to archive - Thanks to Gerd for the translation
+
+3.17.07 Updated LinkPoint API to 1.2a patch
+
+3.17.07 Changed line in checkout_process.php to obfuscate middle 8 digits of CC numbers for all payment modules - original line left commented for those that might need it
+
+3.16.07 Added email invoice 1.1 contrib
+
+3.12.07 Updated the rest of the superglobal calls in the archive for register_long_arrays Off compatibility - $_SESSION $_SERVER $_POST $_GET $_ENV $_COOKIE - say goodbye to PHP < 4.1
+
+2.22.07 Added Site Map 2.3 for SEO
+
+2.21.07 Added the directive php_flag register_globals Off to the htaccess file in the catalog root
+
+2.21.07 Added custom buttons to /includes/languages/english/images/buttons
+
+2.19.07 Reverted /includes/modules/shipping/usps.php to stock osC file to fix a problem with the in cart shipping estimator
+
+2.13.07 Added an htaccess file with the directive RewriteEngine on > RewriteRule \.(html|htm|php|cgi|pl)$ /images/pixel_trans.gif [R,L] to /images which should prevent any unpleasantness if you end up with an unwanted script in there
+
+2.13.07 Moved STS start capture in application_top above the message stack require -Thanks to Rigaden for the fix
+
+2.05.07 Bumped version to 2.2_1
+
+2.05.07 Fixed up /tabs/tabs.css for an issue picking up the font face in Firefox. No change for ietab.css
+
+2.03.07 Updated STS to 4.4 - added popup_image.php.html to EosC template
+
+2.03.07 Changed hardcoded path to stylesheet in sts_template.html to <link rel="stylesheet" type="text/css" href="$templatedir/stylesheet.css">
+
+2.02.07 Replaced all instances of HTTP_POST_VARS and HTTP_GET_VARS with _POST and _GET
+
+1.03.07 Upgraded STS to 4.3.3 - Updated EosC template. Now uses /includes/sts_templates/EosC/boxes/infobox.php.html
+
+12.22.06 Moved Also Purchased include from product_info.php to /includes/modules/xsell_products.php - now conditional to there being no XSell products
+
+12.11.06 Bumped version to 2.2
+
+12.11.06 Applied Register Globals patch to fix coupons needing double entry on checkout
+
+12.10.06 Added Register Globals Off 1.5 patch - modified /admin/newattributes* and /admin/admin_account.php to work with RG=Off
+
+10.29.06 Added switch to new_products turning the module off. If Admin > Maximum Values > New Products Module is set to 0 it won't be displayed on the index
+
+10.29.06 Updated includes/boxes/pages.php to respect on/off status of gv_faq and contact_us
+
+09.25.06 Added Ship In Cart - shipping estimator
+
+09.23.06 Added skip checkout_payment.php if price+shipping = 0 - remove to disable 
+
+08.31.06 Added mod_rewrite rules to .htaccess to block some common exploits
+
+08.31.06 Added index.php files to all subdirs of the admin to plug a minor security worry
+
+08.22.06 Added STS Cart In Header definitions  - remove $headcart in template to disable
+
+08.22.06 Added if statement to product_info.php to display or not display review tab - set Number of Reviews in Product Description to 0 in Admin > Configuration > Maximum Values
+
+08.21.06 Added Ultimate SEO Urls - Off by default
+
+08.20.06 Applied category optimization to /includes/boxes/categories.php
+
+08.18.06 Applied oscommerce-2.2ms2-060817 update
+
+08.16.06 Added register_globals on and zlib.output_compression On directives to top level .htaccess file for those that might need them - uncomment to use
+
+08.13.06 Added /includes/application_toppop.php and reference in popup_image.php to fix popup images not appearing when SEF urls enabled. Just a dupe of the stock osC app top
+
+08.13.06 STS InfoBox Templates added - mobile template added
+
+08.08.06 Added admin switch and if/else statement for tabbed or standard product_info.php
+
+08.08.06 Added UL and XC category box mods- uncomment to activate in /includes/modules/sts_inc/sts_column_left.php
+
+08.08.06 Modified advanced_search_result.php to search in descriptions - uncomment original query and comment out mod to remove
+
+08.08.06 PayPal IPN installed
+
+08.08.06 LinkPoint API installed
+
+08.08.06 AuthorizeNet Aim payment module installed
+
+08.08.06 FedEx XML Shipping added
+
+08.08.06 UPS XML Shipping added
+
+08.08.06 Skip shipping if weight = 0 added to checkout_shipping.php - remove to disable
+
+08.08.06 Default admin login/pass and instructions on how to change it added to installation success and warning to front page
+
+08.07.06 Removed model number from product_info.php display. Uncomment to restore.
+
+08.05.06 nuoveXT-1.6 icons added
+
+08.05.06 Disabled tab cookie for remembering state page to page as it was causing some display problems. /tabs/tabpane.js to reenable, set true
+
+08.05.06 Changed product_info.php to display extra images and specs tab only if data is present
+
+08.05.06 Changed product_info.php UltraPics code to return pop-up on medium images when present in tabbed display
+
+08.05.06 Increased admin timeout to one hour (3600) in /admin/includes/functions/sessions.php
+
+08.05.06 Disabled banner calls in includes/application_top, /includes/footer.php and /includes/modules/sts_inc/sts_footer.php Uncomment changes to reenable
+
+08.04.06 Javascript if statement added to product_info.php calling specific css for tabbed display when viewed with Internet Exploder 
+
+08.03.06 Newsletters & Subscribers 0.53
+
+08.02.06 Admin Access 2.2a
+
+08.02.06 Optimzed tep_get_path - See commented code in /index.php and /includes/functions/general.php to revert
+
+08.02.06 Optimized Also Purchased module /includes/modules/also_purchased_products.php
+
+08.02.06 MS3 Tax Class installed - Revert to stock class by changing /includes/application_top.php and /includes/functions/general.php
+
+08.02.06 Query Debug installed - Admin > Configuration > Logging
+
+08.01.06 Dropdown Quantity Select in shopping cart
+
+08.01.06 Who's Online Enhancement 1.9b
+
+08.01.06 Country and State Auto Selection - on signup and address book
+
+08.01.06 Featured Products 1.5.5 and mySQL 5 fixup
+
+07.31.06 Disabled FileManager and Define Languages in Admin > Tools
+
+07.31.06 TinyMCE text editor and Admin > Configuration switch
+
+07.31.06 Tabbed product_info.php using WebFX Tabpane
+
+07.30.06 Clean up, comment and compartmentalize product_info.php - mod additional images include to output stand alone table
+
+07.30.06 Products Specs separate field in admin/categories.php
+
+07.30.06 Monthly Sales and Tax 2.2
+
+07.30.06 Order Editor 2.6.1
+
+07.30.06 Page Editor 1.5 
+
+07.30.06 Column or List View - Product Listing Columns 2.2a merged with Column Product Listing for SPPC v1.3
+
+07.29.06 Credit Card Mask
+
+07.29.06 Order Number added to Admin > Orders
+
+07.24.06 Reviews in Product Display and Admin Review Approval
+
+07.24.06 UltraPics 1.1 - Add 6 more images to product info
+
+07.24.06 Xsell 2.3 - Caching disabled. 
+If you find you require the cache rename catalog/includes/modules/xsell_products.php.cache to xsell_products.php
+Make a cache directory with CHMOD 777 where you want
+Add this define to catalog/includes/configure.php AND catalog/admin/includes/configure.php
+ define('DIR_FS_CACHE_XSELL', 'Your/cache/directory/');
+
+07.24.06 Short Product Description 1.5
+
+07.24.06 Attribute Mangager Sort 1.0 - Integrated with QTpro
+
+07.23.06 QTpro 4.25 Quantity Tracker Pro
+
+07.23.06 Header Tags Controller 2.5.9.1 - Add ;headertags.php to STS defines
+
+07.23.06 Added Order Number to Invoice and Packing Slip
+
+07.23.06 SPPC 4.15 - Seperate Price Per Customer - updated sql queries for mySQL 5
+
+07.23.06 CCGV 5.16 - Credit Class & Gift Voucher added by overwrite. Moved redemption box above CC. Suppressed js error message on redemption
+
+07.23.06 Simple Template System 4.1 added - EosC template added - Cleaned up stock STS layout as well
+
+07.23.06 Base osC install - osCommerce 2.2 Milestone 2 Update 051113

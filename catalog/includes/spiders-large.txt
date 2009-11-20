@@ -1,0 +1,319 @@
+abot
+dbot
+ebot
+hbot
+kbot
+mbot
+nbot
+obot
+pbot
+rbot
+sbot
+tbot
+ybot
+bot.
+crawl
+slurp
+spider
+accoona
+acoon
+ah-ha.com
+ahoy
+altavista
+ananzi
+anthill
+appie
+arachnophilia
+arale
+araneo
+aranha
+architext
+aretha
+arks
+aspseek
+asterias
+atlocal
+atn
+atomz
+augurfind
+backrub
+bannana_bot
+big brother
+bjaaland
+blackwidow
+bloodhound
+boitho
+booch
+bradley
+calif
+cassandra
+cfetch
+churl
+cienciaficcion
+cmc
+collective
+combine system
+computingsite
+cusco
+deepindex
+deweb
+die blinde kuh
+digger
+dmoz
+docomo
+download express
+dwcp
+ebiness
+e-collector
+emacs-w3 search engine
+esther
+evliya celebi
+ezresult
+falcon
+felix ide
+ferret
+fetchrover
+fido
+findlinks
+fireball
+fish search
+fouineur
+funnelweb
+gazz
+gcreep
+getterroboplus
+geturl
+glx
+goforit
+golem
+grabber
+grapnel
+griffon
+gromit
+grub
+gulliver
+hamahakki
+harvest
+havindex
+hku www octopus
+homerweb
+html index
+html_analyzer
+htmlgobble
+hubater
+hyper-decontextualizer
+ia_archiver
+ibm_planetwide
+ichiro
+iconsurf
+iltrovatore
+image.kapsi.net
+imagelock
+incywincy
+indexer
+infobee
+informant
+infoseek
+ingrid
+inktomisearch.com
+inspector web
+intelliagent
+internet shinchakubin
+ip3000
+iron33
+israeli-search
+ivia
+jack
+java/
+javabee
+jetbot
+jumpstation
+katipo
+kdd-explorer
+kilroy
+knowledge
+kototoi
+labelgrabber
+lachesis
+larbin
+legs
+libwww
+linkalarm
+link validator
+linkscan
+linkwalker
+lockon
+lwp
+lycos
+magpie
+mantraagent
+marvin/
+mattie
+mediafox
+mediapartners
+mercator
+merzscope
+miva
+mj12
+mnogosearch
+moget
+monster
+moose
+motor
+multitext
+muncher
+muscatferret
+mwd.search
+myweb
+nameprotect
+nationaldirectory
+nazilla
+ncsa beta
+nec-meshexplorer
+nederland.zoek
+netcarta webmap engine
+netmechanic
+netresearchserver
+netscoop
+newscan-online
+ng/
+nhse
+nomad
+nutch
+nzexplorer
+objectssearch
+occam
+omni
+open text
+openfind
+orb search
+osis-project
+pack rat
+pageboy
+parasite
+partnersite
+patric
+pear.
+pegasus
+peregrinator
+pgp key agent
+phantom
+phpdig
+picosearch
+piltdownman
+pimptrain
+pinpoint
+pioneer
+piranha
+plumtreewebaccessor
+pompos
+poppelsdorf
+poppi
+popular iconoclast
+rambler
+raven search
+roach
+road runner
+roadhouse
+robbie
+robofox
+robozilla
+rules
+scooter
+scrubby
+search.
+searchprocess
+seeker
+semanticdiscovery
+senrigan
+sg-scout
+shai'hulud
+shark
+shopwiki
+sidewinder
+sift
+simmany
+site searcher
+site valet
+sitetech-rover
+skymob.com
+sleek
+smartwit
+sna-
+snooper
+sohu
+speedfind
+spyder
+steeler/
+suke
+suntek
+supersnooper
+surfnomore
+sven
+sygol
+szukacz
+tach black widow
+tarantula
+templeton
+/teoma
+t-h-u-n-d-e-r-s-t-o-n-e
+titan
+titin
+tkwww
+toutatis
+t-rex
+tutorgig
+ucsd
+udmsearch
+ultraseek
+url check
+vagabondo
+valkyrie
+verticrawl
+victoria
+vision-search
+volcano
+voyager/
+w3c_validator
+w3m2
+w3mir
+wallpaper
+wanderer
+web core
+web hopper
+web wombat
+webbandit
+webcatcher
+webcopy
+webfoot
+weblayers
+weblinker
+weblog monitor
+webmirror
+webquest
+webreaper
+websitepulse
+websnarf
+webstolperer
+webvac
+webwalk
+webwatch
+webwombat
+webzinger
+wget
+whatuseek
+whizbang
+whowhere
+wild ferret
+wire
+worldlight
+wwwc
+xenu
+xget
+xift
+yandex
+zao/
+zippp
+zyborg
+....
+! spiders.txt Contribution version 2005-08-14

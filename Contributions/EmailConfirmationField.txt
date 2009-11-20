@@ -1,0 +1,64 @@
+in /includes/languages/english.php find 
+
+add the following code:
+
+define('ENTRY_EMAIL_ADDRESS_CONFIRMATION', 'Confirm E-Mail:');
+define('ENTRY_EMAIL_ADDRESS_ERROR_NOT_MATCHING', 'The E-Mail Address Confirmation must match your E-Mail Address.');
+define('ENTRY_EMAIL_ADDRESS_CONFIRMATION_TEXT', '*');
+
+(if your shop uses other languages, edit the language files for these languages as well)
+
+_______________________________________________________________________________________
+
+in /includes/form_check.js.php
+
+below the function check_password code block add the following:
+
+function check_email_address(field_name_1, field_name_2, field_size, message_1, message_2) {
+   if (form.elements[field_name_1] && (form.elements[field_name_1].type != "hidden")) {
+ 		var email = form.elements[field_name_1].value;
+ 		var confirmation = form.elements[field_name_2].value;
+
+ 		if (email == '' || email.length < field_size) {
+	 	error_message = error_message + "* " + message_1 + "\n";
+ 		error = true;
+ 		} else if (email != confirmation) {
+ 		error_message = error_message + "* " + message_2 + "\n";
+ 		error = true;
+ 		}
+ 	}
+}
+
+
+_______________________________________________________________________________________
+
+in /includes/form_check.js.php
+
+replace the following:
+
+ check_input("email_address", <?php //echo ENTRY_EMAIL_ADDRESS_MIN_LENGTH; ?>, "<?php //echo ENTRY_EMAIL_ADDRESS_ERROR; ?>");
+
+with:
+
+ check_email_address("email_address", "email_address_confirmation", <?php echo ENTRY_EMAIL_ADDRESS_MIN_LENGTH; ?>, "<?php echo ENTRY_EMAIL_ADDRESS_ERROR; ?>", "<?php echo ENTRY_EMAIL_ADDRESS_ERROR_NOT_MATCHING; ?>");
+
+
+_______________________________________________________________________________________
+
+in /create_account.php):
+
+After:
+
+ <tr>
+ <td class="main"><?php echo ENTRY_EMAIL_ADDRESS; ?></td>
+ <td class="main"><?php echo tep_draw_input_field('email_address') . '&nbsp;' . (tep_not_null(ENTRY_EMAIL_ADDRESS_TEXT) ? '<span class="inputRequirement">' . ENTRY_EMAIL_ADDRESS_TEXT . '</span>': ''); ?></td>
+ </tr>
+
+Add the following code:
+
+ <tr>
+ <td class="main"><?php echo ENTRY_EMAIL_ADDRESS_CONFIRMATION; ?></td>
+ <td class="main"><?php echo tep_draw_input_field('email_address_confirmation') . '&nbsp;' . (tep_not_null(ENTRY_EMAIL_ADDRESS_CONIRMATION_TEXT) ? '<span class="inputRequirement">' . ENTRY_EMAIL_ADDRESS_TEXT . '</span>': ''); ?></td>
+ </tr>
+
+

@@ -1,0 +1,103 @@
+If updating from the previous version then
+the only essential changes are given below:
+-------------------------------------------
+
+**** in /checkout_shippping: reverse the previous fix back to: ****
+
+if (($order->content_type == 'virtual') || ($order->content_type == 'virtual_weight') ) { // Edited for CCGV
+
+**** in /includes/classes/order.php find ****
+
+	$tax_address_query = tep_db_query("select ab.entry_country_id, ab.entry_zone_id from " . TABLE_ADDRESS_BOOK . " ab left join " . TABLE_ZONES . " z on (ab.entry_zone_id = z.zone_id) where ab.customers_id = '" . (int)$customer_id . "' and ab.address_book_id = '" . (int)($this->content_type == 'virtual' ? $billto : $sendto) . "'");
+
+**** and replace with  ****
+
+    $tax_address_query = tep_db_query("select ab.entry_country_id, ab.entry_zone_id from " . TABLE_ADDRESS_BOOK . " ab left join " . TABLE_ZONES . " z on (ab.entry_zone_id = z.zone_id) where ab.customers_id = '" . (int)$customer_id . "' and ab.address_book_id = '" . (int)(($this->content_type == 'virtual' || 'virtual_weight') ? $billto : $sendto) . "'"); // Edited for CCGV
+
+**** in /includes/classes/shopping_cart.php find ****
+
+ 
+
+              if ($virtual_check['total'] > 0) {
+                switch ($this->content_type) {
+                  case 'physical':
+                    $this->content_type = 'mixed';
+                    return $this->content_type;
+                    break;
+
+                  default:
+                    $this->content_type = 'virtual';
+                    break;
+                }
+
+              } else {
+                switch ($this->content_type) {
+                  case 'virtual':
+                    $this->content_type = 'mixed';
+                    return $this->content_type;
+                    break;
+
+                  default:
+                    $this->content_type = 'physical';
+                    break;
+
+                }
+              }
+            }
+
+// CCGV ADDED - BEGIN
+          } elseif ($this->show_weight() == 0) {
+
+ 
+**** and replace with  ****
+
+               if ($virtual_check['total'] > 0) {
+                switch ($this->content_type) {
+                  case 'physical':
+                    $this->content_type = 'mixed';
+                    return $this->content_type;
+                    break;
+
+                  default:
+                    $this->content_type = 'virtual';
+                    break;
+                }
+              } else {
+
+// CCGV ADDED - BEGIN
+
+           if ($this->show_weight() == 0) {
+              $wvirtual_check_query = tep_db_query("select products_weight from " . TABLE_PRODUCTS . " where products_id = '" . $products_id . "'");
+              $wvirtual_check = tep_db_fetch_array($wvirtual_check_query);
+              if ($wvirtual_check['products_weight'] == 0) {
+                switch ($this->content_type) {
+                  case 'physical':
+                    $this->content_type = 'mixed';
+                    return $this->content_type;
+                    break;
+
+                  default:
+                    $this->content_type = 'virtual_weight';
+                    break;
+                }
+              } else {
+
+                switch ($this->content_type) {
+                  case 'virtual':
+                    $this->content_type = 'mixed';
+                    return $this->content_type;
+                    break;
+
+                  default:
+                    $this->content_type = 'physical';
+                    break;
+                }
+              }
+          }              
+       }
+     }
+
+          } elseif ($this->show_weight() == 0) {
+
+These are the only necessary changes you need to make.
+These updates all courtesy of 'Terra' - Edith Karnitsch of terranetwork.net

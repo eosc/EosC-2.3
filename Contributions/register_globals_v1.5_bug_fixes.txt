@@ -1,0 +1,80 @@
+After installing the Register Globals contribution, newly added items were no longer being highlighted in the shopping cart box and our coupon code contribution stopped working. This fix corrects both these problems and likely others I hadn't yet found.  The issue is related to bug that sometimes occurs when link_session_variable (or tep_session_register) is called from within a function.
+
+As a bonus, I also include a fix to get uploads working with the Easy Populate contribution.
+
+1. Backup your database and store files
+
+2. Download and install Register Globals v1.5
+
+3. In both includes/functions/session.php files, replace the link_session_variable function with the following code:
+
+  function link_session_variable($var_name, $map)
+  {
+    if ($map)
+    {
+      // Map global to session variable. If the global variable is already set to some value
+      // then its value overwrites the session variable. I **THINK** this is correct behaviour
+      if (array_key_exists($var_name,$GLOBALS)) {
+        $_SESSION[$var_name] =& $GLOBALS[$var_name];
+      } else {
+        $GLOBALS[$var_name] =& $_SESSION[$var_name];
+      }
+    }
+    else
+    {
+      // Unmap global from session variable. Note that the global variable keeps the value of
+      // the session variable. This should be unnecessary but it reflects the same behaviour
+      // as having register_globals enabled, so in case the OSC code assumes this behaviour,
+      // it is reproduced here
+      $nothing = 0;
+      $GLOBALS[$var_name] =& $nothing;
+      unset($GLOBALS[$var_name]);
+      $GLOBALS[$var_name] = $_SESSION[$var_name];
+    }
+  }
+
+4. In the same files, replace the tep_session_is_registered function with the following code:
+
+  function tep_session_is_registered($variable) {
+// >>> BEGIN REGISTER_GLOBALS
+//    return session_is_registered($variable);
+    return array_key_exists($variable,$_SESSION);
+// <<< END REGISTER_GLOBALS
+  }
+
+That's it!
+
+If you have Easy Populate, also make these changes:
+
+1. In the includes/functions/general.php files, add this new function just below the link_get_variable & link_post_variable functions:
+
+  function link_files_variable($var_name)
+  {
+    // Map global to FILES variable
+    if (isset($_FILES[$var_name]))
+    {
+      $GLOBALS[$var_name] =& $_FILES[$var_name]['tmp_name'];
+      $GLOBALS[$var_name . '_name'] =& $_FILES[$var_name]['name'];
+      $GLOBALS[$var_name . '_type'] =& $_FILES[$var_name]['type'];
+      $GLOBALS[$var_name . '_size'] =& $_FILES[$var_name]['size'];
+    }
+  }
+
+2. In admin/easypopulate.php, replace the previous register globals modification with this:
+
+// >>> BEGIN REGISTER_GLOBALS
+link_get_variable('download');
+link_get_variable('dltype');
+link_get_variable('split');
+
+link_post_variable('MAX_FILE_SIZE');
+link_post_variable('buttoninsert');
+link_post_variable('buttonsplit');
+link_post_variable('localfile');
+
+link_files_variable('usrfl');
+// <<< END REGISTER_GLOABLS
+
+Once you've completed the above changes, uploading should work as before.  The new link_files_variable function may work with other contributions requiring file uploads.
+
+If you have any problems with this fix, I can be reached at steve@targetem.com .  And as usual, make backups before applying anything.  Good luck!
